@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheSeller.lk - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="p5.jpeg" alt="TheSeller.lk Logo">
+        <h1>TheSeller.lk</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="categories.html">Categories</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>All Products</h2>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="p1.png" alt="Product 1 Image">
+                <h2>Fogg 120ml</h2>
+                <p>Rs. 1200.00</p>
+                <label for="quantity1">Qty:</label>
+                <input type="number" id="quantity1" name="quantity1" value="1" min="1" class="quantity-input">
+                <input type="checkbox" id="product1" name="product1" value="1200.00">
+                <label for="product1"> Select</label>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="p4.jpg" alt="Product 2 Image">
+                <h2>Red Rose - Rollar</h2>
+                <p>Rs. 250.00</p>
+                <label for="quantity2">Qty:</label>
+                <input type="number" id="quantity2" name="quantity2" value="1" min="1" class="quantity-input">
+                <input type="checkbox" id="product2" name="product2" value="250.00">
+                <label for="product2"> Select</label>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="p2.png" alt="Product 3 Image">
+                <h2>Fogg 150ml - OAK</h2>
+                <p>Rs. 1350.00</p>
+                <label for="quantity3">Qty:</label>
+                <input type="number" id="quantity3" name="quantity3" value="1" min="1" class="quantity-input">
+                <input type="checkbox" id="product3" name="product3" value="1350.00">
+                <label for="product3"> Select</label>
+            </div>
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="p3.jpg" alt="Product 4 Image">
+                <h2>Hair Duster</h2>
+                <p>Rs. 450.00</p>
+                <label for="quantity4">Qty:</label>
+                <input type="number" id="quantity4" name="quantity4" value="1" min="1" class="quantity-input">
+                <input type="checkbox" id="product4" name="product4" value="450.00">
+                <label for="product4"> Select</label>
+            </div>
+	    <!-- Product 5 -->
+	    <div class="product">
+                <img src="p6.png" alt="Product 5 Image">
+                <h2>Fogg 120ml - Purple</h2>
+                <p>Rs. 1200.00</p>
+                <label for="quantity5">Qty:</label>
+                <input type="number" id="quantity5" name="quantity5" value="1" min="1" class="quantity-input">
+                <input type="checkbox" id="product5" name="product5" value="450.00">
+                <label for="product5"> Select</label>
+            </div>
+        </div>
+        <button class="buy-button" onclick="generateInvoice()">Generate PDF Invoice</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #333; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+}
+
+header {
+    background-color: #222; /* Dark header background */
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #444;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #444; /* Dark background for container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background: #555; /* Dark background for product cards */
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 8px;
+    width: 150px; /* Smaller width */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product img {
+    width: 100px; /* Smaller image */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+.quantity-input {
+    width: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
