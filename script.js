@@ -20,14 +20,16 @@ function generateInvoice() {
 
     // Mapping product IDs to names
     const productNames = {
-        1: "Fogg 120ml",
+        1: "Fogg 120ml - Black",
         2: "Red Rose - Rollar",
-        3: "Fogg 150ml - OAK",
-        20: "Hair Duster",
-        6: "Fogg 120ml - Purple" // Added new product
+        3: "Fogg Master - OAK | 150ml",
+        4: "Hair Duster",
+        5: "Fogg 120ml - Purple",
+        6: "Fogg Master - Marcro | 150ml",
+        7: "Fogg Master - Agar | 150ml" // Added new product
     };
 
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 7; i++) {
         const checkbox = document.getElementById(`product${i}`);
         const quantityInput = document.getElementById(`quantity${i}`);
         if (checkbox && checkbox.checked) {
@@ -61,3 +63,4 @@ function generateInvoice() {
         doc.save("invoice.pdf");
     }
 }
+
