@@ -25,7 +25,7 @@ function generateInvoice() {
         1: "Fogg 120ml - Black",
         2: "Red Rose - Rollar",
         3: "Fogg Master - OAK | 150ml",
-        4: "Hair Duster",
+        4: "Hair Dust",
         5: "Fogg 120ml - Purple",
         6: "Fogg Master - Marcro | 150ml",
         7: "Fogg Master - Agar | 150ml",
